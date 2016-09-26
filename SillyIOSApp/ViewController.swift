@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
+    @IBOutlet weak var background: UIView!
+    @IBOutlet weak var sillyButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +23,23 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func sillyButton(sender: UIButton)
+    {
+        background.backgroundColor = makerandomColor()
+    }
+    private func makerandomColor()-> UIColor
+    {
+        let randomColor : UIColor
+        //make 3 values between 0-1 perentage and create a colro form them.
+        let red : CGFloat = CGFloat(drand48())
+        let green : CGFloat = CGFloat(drand48())
+        let blue : CGFloat = CGFloat(drand48())
+        
+        randomColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        
+        return randomColor
+    }
+    
 }
 
