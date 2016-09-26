@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController
 {
 
-    @IBOutlet weak var background: UIView!
-    @IBOutlet weak var sillyButton: UIButton!
+    @IBOutlet private weak var background: UIView!
+    @IBOutlet private weak var sillyButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,7 @@ class ViewController: UIViewController
         randomColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
         
         return randomColor
-    }
     
-}
+    }
 
+}
