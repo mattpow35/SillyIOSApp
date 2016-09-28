@@ -27,12 +27,16 @@
                                     <action selector="sillyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8MG-rs-wWb"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nql-12-Dqu">
+                                <rect key="frame" x="258" y="437" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="background" destination="8bC-Xf-vdC" id="oiJ-ws-RIN"/>
                         <outlet property="sillyButton" destination="q8H-LS-utG" id="LKK-KM-Tcd"/>
+                        <outlet property="toggleSwitch" destination="Nql-12-Dqu" id="r88-JJ-lHv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

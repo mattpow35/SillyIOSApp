@@ -13,6 +13,7 @@ class ViewController: UIViewController
 
     @IBOutlet private weak var background: UIView!
     @IBOutlet private weak var sillyButton: UIButton!
+    @IBOutlet private weak var toggleSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class ViewController: UIViewController
     @IBAction func sillyButton(sender: UIButton)
     {
         background.backgroundColor = makerandomColor()
-    }
+        
     private func makerandomColor()-> UIColor
     {
         let randomColor : UIColor
@@ -40,6 +41,10 @@ class ViewController: UIViewController
         
         return randomColor
     
+     
+        
     }
-
+    
+   
+    
 }
