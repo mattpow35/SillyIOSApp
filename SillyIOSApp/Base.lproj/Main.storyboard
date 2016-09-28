@@ -20,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8H-LS-utG">
                                 <rect key="frame" x="258" y="277" width="84" height="45"/>
                                 <state key="normal" title="CLICK ME :)"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="258" y="377" width="84" height="45"/>
+                                </variation>
                                 <connections>
                                     <action selector="sillyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8MG-rs-wWb"/>
                                 </connections>
